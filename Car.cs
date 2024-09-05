@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace CompositePattern
 {
-    public interface IComponent 
+    public class Car : BaseComposite
     {
-        double GetPrice();
-        public void DisplayInfo();
+        public Car(string name) : base(name) { }
     }
 }
